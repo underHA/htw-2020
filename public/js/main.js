@@ -30,3 +30,13 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+function checkForm() {
+	var x, text;
+  
+	// Get the value of the input field with id="numb"
+	x = document.getElementById("demo-name").value;
+  
+	document.getElementById("demo").innerHTML = `Your question: ${x}`;
+	console.log(x)
+}

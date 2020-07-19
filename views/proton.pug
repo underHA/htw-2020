@@ -29,7 +29,14 @@ section#four.main.style2.special
     header.major
       h2 physics problem solver
     p text box
-    input#demo-name(type='text' name='demo-name' value='' placeholder='Question')
+    .row.gtr-150
+        .col-10.col-12-medium
+            input#demo-name(type='text' name='demo-name' value='' placeholder='Question')
+        .col-2.col-12-medium
+            button(type='button' onclick='checkForm()') Submit
+    br
+    p#demo
+
 // One
 section#one.main.style1
   .container
