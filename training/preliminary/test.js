@@ -18,7 +18,7 @@ function character(string) {
 /**
  * Predict the letter A, even with a pixel off.
  */
-const result = brain.likely(
+const result = net.run(
   character(
     '######.' +
    '#.....#' +
@@ -27,8 +27,7 @@ const result = brain.likely(
    '#.....#' +
    '#.....#' +
    '######.'
-  ),
-  net
+  )
 );
 
 
